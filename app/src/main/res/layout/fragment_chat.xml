@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:context=".Fragments.ChatFragment"
+    android:clickable="true">
+
+    <com.stfalcon.chatkit.dialogs.DialogsList
+        android:id="@+id/dialogsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:dialogTitleTextStyle="normal"
+        app:dialogUnreadDateStyle="bold"
+        app:dialogUnreadMessageTextColor="@color/real_Black"
+        app:dialogUnreadMessageTextStyle="bold"
+        app:dialogUnreadTitleTextStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:dialogAvatarHeight = "@dimen/dialog_avatar_size"
+        app:dialogAvatarWidth = "@dimen/dialog_avatar_size"
+        app:dialogTitleTextSize= "@dimen/dialog_title_size"
+        app:dialogMessageTextSize = "@dimen/dialog_message_size"
+        app:dialogDateSize = "@dimen/dialog_message_size"/>
+
+    <TextView
+        android:id="@+id/tvEmptyInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:text="@string/empty_inbox"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6156316056990400/2073253907">
+    </com.google.android.gms.ads.AdView>
+
+
+</android.support.constraint.ConstraintLayout>

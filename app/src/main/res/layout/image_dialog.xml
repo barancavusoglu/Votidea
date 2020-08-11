@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivDialogImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ivDummyImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btVote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDialogImage"
+        fancy:fb_borderWidth = "2dp"
+        fancy:fb_borderColor = "@color/white"
+        fancy:fb_defaultColor="@color/colorPrimary"
+        fancy:fb_disabledColor="#5e5e5e"
+        fancy:fb_disabledTextColor="#cfcfcf"
+        fancy:fb_focusColor="#051820"
+        fancy:fb_fontIconResource="&#xf164;"
+        fancy:fb_fontIconSize="15dp"
+        fancy:fb_iconPaddingRight="5dp"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="50dp"
+        fancy:fb_text="@string/giveVote"
+        fancy:fb_textColor="#ffffff"></mehdi.sakout.fancybuttons.FancyButton>
+
+</android.support.constraint.ConstraintLayout>

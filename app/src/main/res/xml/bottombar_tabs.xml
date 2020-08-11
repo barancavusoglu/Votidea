@@ -1,0 +1,28 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home_black_24dp"
+        title="@string/menu_home"
+        barColorWhenSelected="#383838"/>
+    <tab
+        id="@+id/tab_explore"
+        icon="@drawable/ic_explore_black_24dp"
+        title="@string/menu_explore"
+        barColorWhenSelected="#383838"/>
+    <tab
+        id="@+id/tab_add"
+        icon="@drawable/ic_add_circle_outline_black_24dp"
+        title="@string/menu_add_vote"
+        barColorWhenSelected="#383838"/>
+    <tab
+        id="@+id/tab_top"
+        icon="@drawable/ic_stars"
+        title="@string/menu_top"
+        barColorWhenSelected="#383838"/>
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/ic_person_black_24dp"
+        title="@string/menu_profile"
+        barColorWhenSelected="#383838"
+        />
+</tabs>

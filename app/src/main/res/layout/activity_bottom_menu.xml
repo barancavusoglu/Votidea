@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:context=".Activities.BottomMenuActivity"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivVotidea"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/top_menu_size"
+        android:background="@color/colorPrimary"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_word" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:visibility="gone"
+        app:fb_radius="@dimen/top_menu_size"
+        app:layout_constraintBottom_toBottomOf="@id/ivVotidea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivVotidea"
+        fancy:fb_defaultColor="@color/transparent"
+        fancy:fb_focusColor="#8e8e8e"
+        fancy:fb_fontIconResource="&#xf0a8;"
+        fancy:fb_fontIconSize="@dimen/top_menu_icon_size"
+        fancy:fb_iconPosition="left"
+        fancy:fb_text=""
+        fancy:fb_textColor="@android:color/white" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVotidea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivVotidea"
+        fancy:fb_defaultColor="@color/transparent"
+        fancy:fb_focusColor="#8e8e8e"
+        fancy:fb_fontIconResource="&#xf086;"
+        fancy:fb_fontIconSize="@dimen/top_menu_icon_size"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="@dimen/top_menu_size"
+        fancy:fb_text=""
+        fancy:fb_textColor="@android:color/white" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:bb_activeTabColor="#137096"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_inActiveTabColor="#FFA4A4A4"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVotidea">
+    </FrameLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

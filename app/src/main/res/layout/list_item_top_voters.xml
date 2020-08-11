@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topVotersLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_cardview">
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/real_Black"
+        app:layout_constraintEnd_toStartOf="@+id/tvCount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePic"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/tvNameSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toStartOf="@+id/tvCount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        tools:text="Surname" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="15" />
+</android.support.constraint.ConstraintLayout>

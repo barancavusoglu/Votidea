@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:context=".Fragments.HomeFragment"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srlAccentColor="#50BA82"
+        app:srlPrimaryColor="#50ba82">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/tvNoDataMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btGuestOrNoAuth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btGuestOrNoAuth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        app:fb_text="@string/login_or_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        fancy:fb_defaultColor="#00b8ac"
+        fancy:fb_focusColor="#00635c"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_textColor="#FFFFFF" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivNoData"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        app:srcCompat="@drawable/ic_error_outline_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/no_data_found"
+        android:textColor="@color/real_Black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/ivNoData"
+        app:layout_constraintStart_toStartOf="@+id/ivNoData"
+        app:layout_constraintTop_toBottomOf="@+id/ivNoData" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,241 @@
+<resources>
+    <string name="app_name" translatable="false">Votidea</string>
+    <string name="title_activity_deneme_activity" translatable="false">deneme_activity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="facebook_app_id" translatable="false">803064693224783</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb803064693224783</string>
+
+    <string name="brvah_load_end">No More New Data</string>
+    <string name="brvah_load_failed">Loading error!</string>
+    <string name="brvah_loading">Loading...</string>
+    <string name="menu_vote">Vote</string>
+    <string name="menu_add_vote">Add Vote</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_home">"Home"</string>
+    <string name="vote">Posts</string>
+    <string name="voted">Voted</string>
+    <string name="comment">Comments</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+
+    <string name="countryAlpha2URL" translatable="false">http://api.ipstack.com/check?access_key=f6f289e6973e6531808256fe71d615b3</string>
+    <string name="countryAlpha2URL2" translatable="false">http://ip-api.com/json?fields=country,regionName,countryCode</string>
+    <string name="countryAlpha3URL" translatable="false">https://restcountries.eu/rest/v2/alpha/</string>
+
+    <string name="get_city_url" translatable="false">http://api.ipstack.com/check?access_key=f6f289e6973e6531808256fe71d615b3</string>
+    <string name="get_country_and_flag_code_url" translatable="false">https://restcountries.eu/rest/v2/alpha/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hidden_profile">Hidden Profile</string>
+    <string name="options">Options</string>
+    <string name="delete">Delete</string>
+    <string name="rejected">Rejected</string>
+    <string name="waiting_approval">Waiting for Approval</string>
+    <string name="unpublished">Unpublished</string>
+    <string name="unpublish">Unpublish</string>
+    <string name="republish">Republish</string>
+    <string name="sureToDelete">Are you sure to delete?</string>
+    <string name="cannotAccessDeleted">You cannot access a record when it is deleted once.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sureToUnpublish">Are you sure to unpublish this record?</string>
+    <string name="canPublishLater">You can republish it later.</string>
+    <string name="sureToRepublish">Are you sure to republish this record?</string>
+    <string name="canUnpublishLater">You can unpublish it later.</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="processSuccess">Success</string>
+    <string name="unpublishSuccess">Your record has been unpublished.</string>
+    <string name="republishSuccess">Your record has been republished.</string>
+    <string name="deleteSuccess">Your record has been deleted.</string>
+    <string name="secretProfileTitle">Your Profile is Hidden</string>
+    <string name="secretProfileMessage">"Other users can vote your published posts but can't see the owner of it, they can't visit your profile, too. "</string>
+    <string name="ok">Ok</string>
+    <string name="report">Report</string>
+    <string name="optional">(Optional)</string>
+    <string name="reportReason">Report Reason</string>
+    <string name="recordReported">Record has been reported. We will check this as soon as possible.</string>
+    <string name="goTop">Go Top</string>
+    <string name="seeComments">See Comments</string>
+    <string name="thereAreNoComments">No comments (0)</string>
+    <string name="commentsDisabled">Comments are Disabled</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="willPublishAfterApproval">Your voting will be published after approval.</string>
+    <string name="shareAsAnonymous">Share as Anonymous</string>
+    <string name="allowComments">Allow Comments</string>
+    <string name="addNewImage">Add New Image</string>
+    <string name="description">Description</string>
+    <string name="share">Share</string>
+    <string name="disallowComments">Disallow Comments</string>
+    <string name="anonymousRecord">Anonymous</string>
+    <string name="username">Username</string>
+    <string name="nameSurname">Name Surname</string>
+    <string name="save">Save Changes</string>
+    <string name="masterpass" translatable="false">frutti</string>
+    <string name="emailOrUsername">E-Mail or Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Log Out</string>
+    <string name="editPhoto">Edit</string>
+    <string name="inputSizeError">Please check your input</string>
+    <string name="updateUserData">Update User Data</string>
+    <string name="fieldsAreUpdated">Are you sure to update these fields?</string>
+    <string name="profilePicture">Profile Picture</string>
+    <string name="profileUpdated">Your Profile is Updated</string>
+    <string name="thereIsNoChange">No changes detected</string>
+    <string name="notice">Notice</string>
+    <string name="follow">Follow</string>
+    <string name="followingAlready">Following</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="sureToUnfollow">Are you sure to unfollow this user?</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="cancel">Cancel</string>
+    <string name="giveVote">Vote</string>
+    <string name="now">Now</string>
+    <string name="menu_top">Top</string>
+    <string name="menu_explore">Explore</string>
+    <string name="search_user">Search User</string>
+    <string name="hideResults">Hide Results</string>
+    <string name="showResults">Show Results</string>
+    <string name="world">World</string>
+    <string name="username_is_used">Username already in use</string>
+    <string name="email_is_used">This E-Mail is used by another user.</string>
+    <string name="email" translatable="false">E-Mail</string>
+    <string name="password_again">Password (Again)</string>
+    <string name="duplicate_vote">You already voted this post.</string>
+    <string name="verificateEmail">E-Mail Verification</string>
+    <string name="resend_code">Resend Verification Code</string>
+    <string name="verification_code_sent">Verification code sent to</string>
+    <string name="wait_verification_code">Please wait for another verification code...</string>
+    <string name="please_enter_code">Please enter your 6-digit verification code sent to your E-Mail. If you don\'t have the code, you can send it again by clicking the button below.</string>
+    <string name="account_verificated">You have successfully verificated your E-Mail</string>
+    <string name="wrong_verification_code">You have entered wrong or outdated verification code</string>
+    <string name="wait_verification_code_enter">Please wait 1 minute to enter a new verification code</string>
+    <string name="verificate">Verificate</string>
+    <string name="enter6digits">Please enter 6 digits</string>
+    <string name="goToSettings">Go To Settings</string>
+    <string name="later">Later</string>
+    <string name="havent_verificated_email">You haven\'t verificated your E-Mail yet</string>
+    <string name="go_settings_for_verification">You can verificate your E-Mail from Settings.</string>
+    <string name="verification_sent_to">Verification Code Sent To:</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="login_guest">Login as Guest</string>
+    <string name="or">Or</string>
+    <string name="guest_user_name_surname">Guest User</string>
+    <string name="guest">Guest</string>
+    <string name="guestToken" translatable="false">FmT0nxWPfQ+p4TyzTJZbo1ZqdoVltRmsO0rqwQSfRBw=</string>
+    <string name="loginned_as_guest">You loginned as guest</string>
+    <string name="login_or_register">Login or Register</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="go_login_or_register">Please Login or Register to follow people, vote and comment.</string>
+    <string name="follow_users_to_see_posts">You don\'t follow anyone. You can find people to follow at Explore Page.</string>
+    <string name="username_used">This username is used by another user.</string>
+    <string name="security_error">Security Error</string>
+    <string name="please_enter_only_english">Please enter only English characters or numbers</string>
+    <string name="please_enter_between_5_18">Please enter between 5 and 18 characters</string>
+    <string name="please_check">Please Check</string>
+    <string name="enter_specific_range_of_characters">Please enter specific range of characters</string>
+    <string name="use_specific_punctuation_marks_email">Please use specific punctuation marks: @ _ - .</string>
+    <string name="use_specific_punctuation_marks_username">Please use specific punctuation marks: - _ .</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="you_didnt_upload_photo">You didn\'t upload a profile picture</string>
+    <string name="sure_to_not_upload_photo">Are you sure to not upload a photo?</string>
+    <string name="upload_photo">Upload</string>
+    <string name="continue_no_photo">Continue</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="most_voter">Voters</string>
+    <string name="most_voted">Voted Posts</string>
+    <string name="most_commented">Commented Posts</string>
+    <string name="the_most">In Last 10 Days The Most</string>
+    <string name="login_input">Please fill in all fields</string>
+    <string name="wrong_login">Incorrect Email or Username / Password combination</string>
+    <string name="empty_inbox">Your inbox is empty :(</string>
+    <string name="forgotPassword"><u>Forgot Password?</u></string>
+    <string name="send_verification_code">Send Verification Code</string>
+    <string name="new_password">New Password</string>
+    <string name="new_password_again">New Password (Again)</string>
+    <string name="change_password">Change Password</string>
+    <string name="please_wait_for_multiple_request">Please wait 60 seconds for another request</string>
+    <string name="at_least_four_characters">Please enter at least 4 characters for the password</string>
+    <string name="six_characters_for_code">Please enter 6 characters for the approval code</string>
+    <string name="password_changed">Your password successfully changed</string>
+    <string name="under_maintenance_title">Under Maintenance</string>
+    <string name="under_maintenance_message">Votidea is under maintenance. We will be back soon. Thank you for your patience.</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_message">Please check your internet connection and try again.</string>
+    <string name="update_app_title">New Version Available</string>
+    <string name="update_app_message">Please update app to new version to continue.</string>
+    <string name="user_banned_title">You\'re going down</string>
+    <string name="user_banned_message">You are banned from Votidea, because of sharing inconvenient content or disturbing other people. Please contact votidea@gmail.com if you think this is wrong.</string>
+    <string name="banned_ok">Hell no please OMG!</string>
+    <string name="this_is_facebook_account">This E-Mail is connected to a FacebookAccount. Please try to login with Facebook.</string>
+    <string name="vote_count">Votes</string>
+    <string name="detect_location">Update My Location</string>
+    <string name="update_location_title">Update My Location</string>
+    <string name="update_location_message">Your location info will be updated as below. Do you want to continue?</string>
+    <string name="basic_error">An error occured. Please try again later</string>
+    <string name="provider_dialog_title">Location Services Unavailable</string>
+    <string name="provider_dialog_message">Please enable your device\'s Location Services.</string>
+    <string name="getting_location_info">Detecting your location</string>
+    <string name="enter_only_letters">Please enter only letters</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-6156316056990400~4364962059</string>
+    <string name="suggestion_dialog_title">Review &amp; Give Advice</string>
+    <string name="rate_app">Rate Votidea on GooglePlay</string>
+    <string name="suggestion_info_dialog_message">Thank you.</string>
+    <string name="wait_1_minute">Please wait 1 minute for another request</string>
+
+    <string name="webservice_main" translatable="false">http://185.141.33.87/votidea/webservice.asmx/</string>
+    <string name="webservice_backup" translatable="false">http://185.141.33.87/votidea_backup/webservice.asmx/</string>
+
+    <string name="ws_GetVersionCode" translatable="false">GetVersionCode</string>
+    <string name="ws_Login" translatable="false">Login</string>
+    <string name="ws_InsertFirebaseInstanceID" translatable="false">InsertFirebaseInstanceID</string>
+    <string name="ws_GetMessagesFirstTime" translatable="false">GetMessagesFirstTime</string>
+    <string name="ws_CheckNewMessages" translatable="false">CheckNewMessages</string>
+    <string name="ws_FacebookRegister" translatable="false">FacebookRegister</string>
+    <string name="ws_FacebookLogin" translatable="false">FacebookLogin</string>
+    <string name="ws_SendForgottenPasswordCode" translatable="false">SendForgottenPasswordCode</string>
+    <string name="ws_ApproveForgottenPasswordCode" translatable="false">ApproveForgottenPasswordCode</string>
+    <string name="ws_RegisterEmailUser" translatable="false">RegisterEmailUser</string>
+    <string name="ws_CreateVoting" translatable="false">CreateVoting</string>
+    <string name="ws_GetComments" translatable="false">GetComments</string>
+    <string name="ws_Comment" translatable="false">Comment</string>
+    <string name="ws_RemoveComment" translatable="false">RemoveComment</string>
+    <string name="ws_Report" translatable="false">Report</string>
+    <string name="ws_LoadMoreMessages" translatable="false">LoadMoreMessages</string>
+    <string name="ws_SendMessage" translatable="false">SendMessage</string>
+    <string name="ws_GetMasterVotingRecordsExplore" translatable="false">GetMasterVotingRecordsExplore</string>
+    <string name="ws_Vote" translatable="false">Vote</string>
+    <string name="ws_GetFollowData" translatable="false">GetFollowData</string>
+    <string name="ws_GetMasterVotingRecordsHome" translatable="false">GetMasterVotingRecordsHome</string>
+    <string name="ws_Follow" translatable="false">Follow</string>
+    <string name="ws_Unfollow" translatable="false">Unfollow</string>
+    <string name="ws_GetVotingRecordsProfile" translatable="false">GetVotingRecordsProfile</string>
+    <string name="ws_GetProfileUser" translatable="false">GetProfileUser</string>
+    <string name="ws_RemoveVoting" translatable="false">RemoveVoting</string>
+    <string name="ws_ChangePublishedState" translatable="false">ChangePublishedState</string>
+    <string name="ws_SearchUser" translatable="false">SearchUser</string>
+    <string name="ws_UpdateLocation" translatable="false">UpdateLocation</string>
+    <string name="ws_AddSuggestion" translatable="false">AddSuggestion</string>
+    <string name="ws_UpdateProfileData" translatable="false">UpdateProfileData</string>
+    <string name="ws_SendVerificationCode" translatable="false">SendVerificationCode</string>
+    <string name="ws_ApproveVerificationCode" translatable="false">ApproveVerificationCode</string>
+    <string name="ws_GetTopVoters" translatable="false">GetTopVoters</string>
+    <string name="ws_GetTopVoted" translatable="false">GetTopVoted</string>
+    <string name="ws_GetTopCommented" translatable="false">GetTopCommented</string>
+    <string name="ws_GetCountryName" translatable="false">GetCountryName</string>
+    <string name="user_not_found">There is no User with this Username or E-Mail</string>
+    <string name="open_source_libraries" translatable="false"><u>Open Source Libraries in this Application</u></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

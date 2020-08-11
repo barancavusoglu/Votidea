@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "369205641552",
+    "firebase_url": "https://votidea-ef6e2.firebaseio.com",
+    "project_id": "votidea-ef6e2",
+    "storage_bucket": "votidea-ef6e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369205641552:android:f352e54e58d4346c",
+        "android_client_info": {
+          "package_name": "com.bcmobileappdevelopment.votidea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369205641552-msv7g6pka43h1iac7uhcje636uq56rgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArfIKCDM1zPDpX96EZh9OD7Esud9JbEu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369205641552-msv7g6pka43h1iac7uhcje636uq56rgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6156316056990400~4364962059"
+    }
+  ],
+  "configuration_version": "1"
+}

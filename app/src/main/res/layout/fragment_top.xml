@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:animateLayoutChanges="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivVoterFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@id/ivVoter"
+                    app:layout_constraintEnd_toEndOf="@id/ivVoter"
+                    app:layout_constraintStart_toStartOf="@id/ivVoter"
+                    app:layout_constraintTop_toTopOf="@id/ivVoter" />
+
+                <ImageView
+                    android:id="@+id/ivVoter"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:alpha="1"
+                    app:layout_constraintEnd_toStartOf="@+id/ivVoted"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivVoted"
+                    app:srcCompat="@drawable/ic_person_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/ivVotedFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/ivVoted"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="@id/ivVoted"
+                    app:layout_constraintStart_toStartOf="@id/ivVoted"
+                    app:layout_constraintTop_toTopOf="@id/ivVoted" />
+
+                <ImageView
+                    android:id="@+id/ivVoted"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:alpha=".5"
+                    app:layout_constraintEnd_toStartOf="@+id/ivCommented"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivVoter"
+                    app:layout_constraintTop_toBottomOf="@id/tvTheMost"
+                    app:srcCompat="@drawable/ic_equalizer_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/ivCommentedFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCommented"
+                    app:layout_constraintEnd_toEndOf="@+id/ivCommented"
+                    app:layout_constraintStart_toStartOf="@+id/ivCommented"
+                    app:layout_constraintTop_toTopOf="@+id/ivCommented" />
+
+                <ImageView
+                    android:id="@+id/ivCommented"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:alpha="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivVoted"
+                    app:layout_constraintTop_toTopOf="@+id/ivVoted"
+                    app:layout_constraintVertical_bias="0.2"
+                    app:srcCompat="@drawable/ic_comment_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tvVoter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/most_voter"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ivVoter"
+                    app:layout_constraintStart_toStartOf="@+id/ivVoter"
+                    app:layout_constraintTop_toBottomOf="@+id/ivVoterFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvVoted"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/most_voted"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ivVoted"
+                    app:layout_constraintStart_toStartOf="@+id/ivVoted"
+                    app:layout_constraintTop_toBottomOf="@+id/ivVotedFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvCommented"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/most_commented"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ivCommentedFrame"
+                    app:layout_constraintStart_toStartOf="@+id/ivCommentedFrame"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCommentedFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvTheMost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/the_most"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/recycler_view_item_1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListVoting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/recycler_view_item_1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListCommented"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/recycler_view_item_1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

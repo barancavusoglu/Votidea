@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_anim"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        fancy:fb_defaultColor="@color/transparent"
+        fancy:fb_focusColor="#8e8e8e"
+        fancy:fb_fontIconResource="&#xf0a8;"
+        fancy:fb_fontIconSize="@dimen/top_menu_icon_size"
+        fancy:fb_iconPosition="left"
+        app:fb_radius="@dimen/top_menu_size"
+        fancy:fb_text=""
+        fancy:fb_textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:alpha="0.3"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/white_mspaint" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="@+id/ivBack"
+        app:layout_constraintStart_toStartOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@+id/ivBack"
+        android:animateLayoutChanges="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:animateLayoutChanges="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clUsername"
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_32"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:alpha="0.7"
+                android:background="@drawable/rounded_corner_register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocation">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bt_username_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:met_errorColor="#ff2d22"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="30"
+                    app:met_minCharacters="5" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/bt_username_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    fancy:fb_defaultColor="@color/transparent"
+                    fancy:fb_focusColor="@color/transparent"
+                    fancy:fb_fontIconResource="&#xf02c;"
+                    fancy:fb_fontIconSize="20dp"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text=""
+                    fancy:fb_textColor="#FFFFFF" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tvNameSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:background="@drawable/rounded_corner_facebook_register"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivProfilePic"
+                app:layout_constraintTop_toTopOf="@+id/ivProfilePic" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:background="@drawable/rounded_corner_facebook_register"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivProfilePic"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameSurname" />
+
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:background="@drawable/rounded_corner_facebook_register"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="4dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivProfilePic"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+
+            <ImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:alpha="1"
+                android:background="@drawable/grey_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btRemovePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+                app:layout_constraintTop_toTopOf="@+id/ivProfilePic"
+                fancy:fb_defaultColor="#961a13"
+                fancy:fb_disabledColor="#5e5e5e"
+                fancy:fb_disabledTextColor="#cfcfcf"
+                fancy:fb_focusColor="#1e0504"
+                fancy:fb_fontIconResource="&#xf00d;"
+                fancy:fb_fontIconSize="20dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="50dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="#FFFFFF" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_32"
+                android:layout_marginTop="@dimen/margin_32"
+                android:layout_marginEnd="@dimen/margin_32"
+                android:layout_marginBottom="24dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                app:fb_text="@string/register"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clUsername"
+                fancy:fb_defaultColor="#0087b8"
+                fancy:fb_focusColor="#00435b"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_textColor="#FFFFFF" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/top_menu_size"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_word" />
+
+
+</android.support.constraint.ConstraintLayout>

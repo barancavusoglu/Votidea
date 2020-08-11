@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@color/home_background"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".Fragments.CommentsFragment"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_8"
+        app:layout_constraintBottom_toTopOf="@id/btAddVote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srlAccentColor="#50BA82"
+        app:srlPrimaryColor="#50ba82">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btAddVote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etComment"
+        fancy:fb_defaultColor="#137096"
+        fancy:fb_disabledColor="#5e5e5e"
+        fancy:fb_disabledTextColor="#cfcfcf"
+        fancy:fb_focusColor="#051820"
+        fancy:fb_fontIconResource="&#xf27a;"
+        fancy:fb_fontIconSize="15dp"
+        fancy:fb_iconPaddingRight="5dp"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="50dp"
+        fancy:fb_text=""
+        fancy:fb_textColor="#FFFFFF">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:ems="10"
+        android:hint="Yorum Yap..."
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="250"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAddVote"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fullLogoSize">50dp</dimen>
+    <dimen name="list_item_profile_size">50dp</dimen>
+    <dimen name="state_icon_size">20dp</dimen>
+    <dimen name="font_1">8sp</dimen>
+    <dimen name="font_2">15sp</dimen>
+    <dimen name="font_3">12sp</dimen>
+    <dimen name="font_4">13sp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="top_menu_size">50dp</dimen>
+    <dimen name="top_menu_icon_size">40dp</dimen>
+    <dimen name="dialog_avatar_size">56dp</dimen>
+    <dimen name="dialog_title_size">18sp</dimen>
+    <dimen name="dialog_message_size">16sp</dimen>
+    <dimen name="chat_message_text_size">15sp</dimen>
+    <dimen name="chat_message_date_size">13sp</dimen>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:animateLayoutChanges="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/search_user"
+                    android:selectAllOnFocus="true"
+                    android:shadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:met_baseColor="@color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_underlineColor="@color/white"
+                    app:met_validateOnFocusLost="true" />
+
+                <ImageView
+                    android:id="@+id/btDummyUser"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="@+id/etUser"
+                    app:layout_constraintEnd_toEndOf="@+id/etUser"
+                    app:layout_constraintStart_toStartOf="@+id/etUser"
+                    app:layout_constraintTop_toTopOf="@+id/etUser"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivWorldFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/ivWorld"
+                    app:layout_constraintEnd_toEndOf="@id/ivWorld"
+                    app:layout_constraintStart_toStartOf="@id/ivWorld"
+                    app:layout_constraintTop_toTopOf="@id/ivWorld" />
+
+                <ImageView
+                    android:id="@+id/ivWorld"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:alpha="0.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivMyCountry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btDummyUser"
+                    app:layout_constraintVertical_bias="0.2" />
+
+
+                <ImageView
+                    android:id="@+id/ivMyCountryFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMyCountry"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="@id/ivMyCountry"
+                    app:layout_constraintStart_toStartOf="@id/ivMyCountry"
+                    app:layout_constraintTop_toTopOf="@id/ivMyCountry" />
+
+                <ImageView
+                    android:id="@+id/ivMyCountry"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:alpha="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivMyCity"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivWorld"
+                    app:layout_constraintTop_toBottomOf="@+id/etUser"
+                    app:layout_constraintVertical_bias="0.2" />
+
+                <ImageView
+                    android:id="@+id/ivMyCityFrame"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/white_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivMyCity"
+                    app:layout_constraintEnd_toEndOf="@+id/ivMyCity"
+                    app:layout_constraintStart_toStartOf="@+id/ivMyCity"
+                    app:layout_constraintTop_toTopOf="@+id/ivMyCity" />
+
+                <ImageView
+                    android:id="@+id/ivMyCity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:alpha="0.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMyCountry"
+                    app:layout_constraintTop_toBottomOf="@+id/btDummyUser"
+                    app:layout_constraintVertical_bias="0.2"
+                    app:srcCompat="@drawable/ic_city" />
+
+                <TextView
+                    android:id="@+id/tvWorld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/world"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivWorld"
+                    app:layout_constraintStart_toStartOf="@+id/ivWorld"
+                    app:layout_constraintTop_toBottomOf="@+id/ivWorldFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvMyCountry"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Turkey"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivMyCountry"
+                    app:layout_constraintStart_toStartOf="@+id/ivMyCountry"
+                    app:layout_constraintTop_toBottomOf="@+id/ivMyCountryFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvMyCity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Ankara"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ivMyCityFrame"
+                    app:layout_constraintStart_toStartOf="@+id/ivMyCityFrame"
+                    app:layout_constraintTop_toBottomOf="@+id/ivMyCityFrame"
+                    app:layout_goneMarginTop="30dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        app:srlAccentColor="#50BA82"
+        app:srlPrimaryColor="#50ba82">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_anchorGravity="bottom|center"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/explore_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

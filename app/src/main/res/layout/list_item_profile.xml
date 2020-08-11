@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItemHomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/home_cardview"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/tvIsAnonymous"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                fancy:fb_defaultColor="@color/transparent"
+                fancy:fb_focusColor="#344e00"
+                fancy:fb_fontIconSize="@dimen/state_icon_size"
+                fancy:fb_textSize= "@dimen/font_3"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="@string/anonymousRecord"
+                fancy:fb_textColor="@color/grey" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/tvState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvIsAnonymous"
+                fancy:fb_defaultColor="@color/transparent"
+                fancy:fb_focusColor="#344e00"
+                fancy:fb_fontIconSize="@dimen/state_icon_size"
+                fancy:fb_textSize= "@dimen/font_3"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="@string/waiting_approval"
+                fancy:fb_textColor="@color/grey" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_32"
+                android:layout_marginEnd="@dimen/margin_32"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvState" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/pBar1"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="@dimen/margin_4"
+                app:layout_constraintEnd_toEndOf="@+id/iv1"
+                app:layout_constraintStart_toStartOf="@+id/iv1"
+                app:layout_constraintTop_toBottomOf="@+id/iv1"
+                app:rcBackgroundPadding="1dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="@dimen/margin_8"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv1"
+                app:layout_constraintTop_toTopOf="@+id/iv1" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/pBar2"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="@dimen/margin_4"
+                app:layout_constraintEnd_toEndOf="@+id/iv2"
+                app:layout_constraintStart_toStartOf="@+id/iv2"
+                app:layout_constraintTop_toBottomOf="@+id/iv2"
+                app:rcBackgroundPadding="1dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pBar1" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/pBar3"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="@dimen/margin_4"
+                app:layout_goneMarginTop="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv3"
+                app:layout_constraintStart_toStartOf="@+id/iv3"
+                app:layout_constraintTop_toBottomOf="@+id/iv3"
+                app:rcBackgroundPadding="1dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv3"
+                app:layout_constraintTop_toBottomOf="@+id/pBar1" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/pBar4"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="@dimen/margin_4"
+                app:layout_constraintEnd_toEndOf="@+id/iv4"
+                app:layout_constraintStart_toStartOf="@+id/iv4"
+                app:layout_constraintTop_toBottomOf="@+id/iv4"
+                app:rcBackgroundPadding="1dp" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:background="@drawable/rounded_corner_home_desc"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btVoteOptions" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:paddingBottom="5dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/btVoteCount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pBar3"
+                fancy:fb_defaultColor="@color/home_cardview"
+                fancy:fb_focusColor="#8e8e8e"
+                fancy:fb_fontIconResource="&#xf27a;"
+                fancy:fb_fontIconSize="20dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="50dp"
+                fancy:fb_text="@string/seeComments"
+                fancy:fb_textColor="#535353" />
+
+            <TextView
+                android:id="@+id/tv1perc"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:background="@drawable/white_circle"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv1"
+                app:layout_constraintStart_toStartOf="@+id/iv1" />
+
+            <TextView
+                android:id="@+id/tv2perc"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:background="@drawable/white_circle"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv2"
+                app:layout_constraintStart_toStartOf="@+id/iv2" />
+
+            <TextView
+                android:id="@+id/tv3perc"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:background="@drawable/white_circle"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv3"
+                app:layout_constraintStart_toStartOf="@+id/iv3" />
+
+            <TextView
+                android:id="@+id/tv4perc"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginBottom="@dimen/margin_4"
+                android:background="@drawable/white_circle"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv4"
+                app:layout_constraintStart_toStartOf="@+id/iv4" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv1Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/white_circle"
+                app:layout_constraintStart_toStartOf="@+id/iv1"
+                app:layout_constraintTop_toTopOf="@+id/iv1"
+                app:srcCompat="@drawable/ic_check_green_24dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv2Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@drawable/white_circle"
+                app:layout_constraintStart_toStartOf="@+id/iv2"
+                app:layout_constraintTop_toTopOf="@+id/iv2"
+                app:srcCompat="@drawable/ic_check_green_24dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv3Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/white_circle"
+                app:layout_constraintStart_toStartOf="@+id/iv3"
+                app:layout_constraintTop_toTopOf="@+id/iv3"
+                app:srcCompat="@drawable/ic_check_green_24dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv4Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/white_circle"
+                app:layout_constraintStart_toStartOf="@+id/iv4"
+                app:layout_constraintTop_toTopOf="@+id/iv4"
+                app:srcCompat="@drawable/ic_check_green_24dp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:fontFamily="@font/roboto"
+                android:text="9 Ekim 2018"
+                android:textSize="@dimen/font_4"
+                app:layout_constraintBottom_toTopOf="@+id/tvDesc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/line" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btVoteOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvState"
+                fancy:fb_defaultColor="@color/home_cardview"
+                fancy:fb_focusColor="#8e8e8e"
+                fancy:fb_fontIconResource="&#xf142;"
+                fancy:fb_fontIconSize="20dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="50dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="#535353" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btVoteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btComments"
+                fancy:fb_defaultColor="@color/home_cardview"
+                fancy:fb_focusColor="#8e8e8e"
+                fancy:fb_fontIconResource="&#xf0c0;"
+                fancy:fb_fontIconSize="20dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="50dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="@color/colorPrimary" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

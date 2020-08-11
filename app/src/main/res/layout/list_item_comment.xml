@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_comment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_cardview">
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/real_Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePic"
+        tools:text="Comment" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toBottomOf="@+id/tvComment"
+        tools:text="@tools:sample/date/mmddyy" />
+
+    <TextView
+        android:id="@+id/tvUsernameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:fontFamily="@font/roboto"
+        android:text="Baran"
+        android:textColor="@color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePic" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#d9d9d9</color>
+    <color name="colorPrimary">#137096</color>
+    <color name="colorAccent">#00d3b7</color>
+    <color name="home_background">#d9d9d9</color>
+    <color name="home_cardview">#E6E6E6</color>
+    <color name="colorDeneme">#fafafa</color>
+    <color name="black">#b9b9b9</color>
+    <color name="blue">#00ccff</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#4b4b4b</color>
+    <color name="red">#a4000a</color>
+    <color name="real_Black">#000000</color>
+    <color name="optionsGrey">#5ab9b9b9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#b9b9b9</color>
+    <color name="light_green">#47ff5d</color>
+    <color name="green">#00b32d</color>
+    <color name="teal">#00B8AC</color>
+    <color name="pink">#ff416a</color>
+    <color name="orange">#f27100</color>
+    <color name="transparent_white">#63FFFFFF</color>
+
+</resources>
